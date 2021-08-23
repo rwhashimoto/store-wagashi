@@ -1,4 +1,5 @@
 .l-main {
+    font-family: $font-family;
     p{
         background-color: red;
         @include media-sp{
