@@ -1,0 +1,45 @@
+.l-header {//.l-header
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background: url(images/common/kv-pc.jpg);
+    background-size:cover;
+    background-position: center;
+    background-color: $main-color;
+    @include media-sp {
+        background: url(images/common/kv-sp.jpg);
+    }
+    
+    &-content {//.l-header-content
+        display: flex;
+        flex-flow: row-reverse;
+        .site-logo {
+            display: block;
+            width: 40px;
+            margin: 70px 115px 0 25px;
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+        .site-menu {
+            display: flex;
+            .site-menu-item {
+                margin: 60px 0 0 25px;
+                text-decoration: none;
+                list-style: none;
+                -ms-writing-mode: tb-rl;
+                writing-mode: vertical-rl;
+                a {
+                    color: $sub-color;
+                }
+            }
+        }
+
+    }
+    &-online {//.l-header-online
+        -ms-writing-mode: tb-rl;
+        writing-mode: vertical-rl;
+        background-color: aqua;
+    }
+}
