@@ -36,15 +36,45 @@
         display: flex;
         flex-flow: row-reverse;
         padding: 180px 0 0;
+        @include media-sp{
+            padding: 80px 0 0;
+        }
         .news-list {
             margin: 0 87px 0 0;
+            height: 290px;
             -ms-writing-mode: tb-rl;
             writing-mode: vertical-rl;
-            .date {
-                font-size: 1.4rem;
+            position: relative;
+            @include media-sp{
+                margin: 0 30px 0 0;
             }
-            .title {
-                font-size: 1.6rem;
+            &::after {
+                content: "";
+                width: 1px;
+                height: 290px;
+                background-color: $main-color;
+                position: absolute;
+            }
+        }
+        .news-list-item {
+            padding: 10px 30px;
+            list-style: none;
+            border-right: 1px solid $main-color;
+            @include media-sp{
+                padding: 12px;
+            }
+            .date {
+                display: block;
+                color: $main-color;
+            }
+            .ttl {
+                display: block;
+                color: $main-color;
+            }
+        }
+        .news-list-item.sp{
+            @include media-sp{
+                display: none;
             }
         }
 
