@@ -136,8 +136,12 @@
                 right: -20px;
             }
         }
-
     }
 
-
+    &-map {//.l-main-map
+        margin: 180px 0 0;
+        width: 100%;
+        height: 450px;
+        border: none;
+    }
 }
