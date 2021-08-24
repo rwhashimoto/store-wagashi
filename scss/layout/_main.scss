@@ -1,9 +1,54 @@
-.l-main {
+.l-main {//.l-main
+    margin: 0 auto;
+    background-color: $bg-color;
     font-family: $font-family;
-    p{
-        background-color: red;
-        @include media-sp{
-            background-color: green;
+    &-inner {//.l-main-inner
+        max-width: 1024px;
+        margin: 0 auto;
+        padding: 0 2%;
+    }
+
+    &-title{//.l-main-title
+        -ms-writing-mode: tb-rl;
+        writing-mode: vertical-rl;
+        display: flex;
+        align-items: center;
+        .head {
+            font-size: 3.6rem;
+            @include media-sp{
+                font-size: 2.8rem;
+            }
+        }
+        .lead {
+            margin: 18px 0 0;
+            font-size: 1.4rem;
         }
     }
+    &-title.flex{//.l-main-title
+        flex-direction: column-reverse;
+        align-items: flex-start;
+        .lead {
+            margin: 0;
+        }
+    }
+
+    &-news {//.l-main-news
+        display: flex;
+        flex-flow: row-reverse;
+        padding: 180px 0 0;
+        .news-list {
+            margin: 0 87px 0 0;
+            -ms-writing-mode: tb-rl;
+            writing-mode: vertical-rl;
+            .date {
+                font-size: 1.4rem;
+            }
+            .title {
+                font-size: 1.6rem;
+            }
+        }
+
+    }
+
+
 }
