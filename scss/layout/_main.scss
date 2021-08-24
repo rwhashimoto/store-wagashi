@@ -22,6 +22,9 @@
         .lead {
             margin: 18px 0 0;
             font-size: 1.4rem;
+            @include media-sp{
+                display: none;
+            }
         }
     }
     &-title.flex{//.l-main-title
@@ -75,6 +78,62 @@
         .news-list-item.sp{
             @include media-sp{
                 display: none;
+            }
+        }
+    }
+
+    &-product {//.l-main-product
+        display: flex;
+        .product-content {
+            margin: 100px 20px 0;
+            position: relative;
+            @include media-sp{
+                margin: 70px 10px 0;
+            }
+            .product-img {
+                width: 639px;
+                @include media-sp{
+                    width: 100%;
+                }
+                img {
+                    width: 100%;
+                    height: auto;
+                    vertical-align: top;
+                }
+            }
+            .product-text {
+                opacity: 0.6;
+                display: inline-block;
+                padding: 50px 115px;
+                position: absolute;
+                bottom: -20px;
+                font-size: 1.6rem;
+                color: $sub-color;
+                @include media-sp{
+                    padding: 30px 40px;
+                    font-size: 1.4rem;
+                }
+            }
+        }
+        &.product01 {
+            flex-flow: row-reverse;
+            padding: 180px 0 0;
+            @include media-sp{
+                padding: 85px 0 0;
+            }
+            .product-text {
+                background-color: $product01-color;
+                left: -20px;
+            }
+        }
+        &.product02 {
+            padding: 160px 0 0;
+            @include media-sp{
+                padding: 85px 0 0;
+            }
+            .product-text {
+                background-color: $product02-color;
+                right: -20px;
             }
         }
 
