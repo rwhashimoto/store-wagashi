@@ -7,4 +7,5 @@ html {
 p,
 a {
     @include fz(14);
+    text-decoration: none;
 }
