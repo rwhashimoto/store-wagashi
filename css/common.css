@@ -571,7 +571,7 @@ a {
   }
 }
 .l-main-product .product-content .product-img {
-  width: 639px;
+  max-width: 639px;
 }
 @media screen and (max-width: 768px) {
   .l-main-product .product-content .product-img {

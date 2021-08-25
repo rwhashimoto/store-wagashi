@@ -103,7 +103,7 @@
                 }
             }
             .product-img {
-                width: 639px;
+                max-width: 639px;
                 @include media-sp{
                     width: 100%;
                 }
