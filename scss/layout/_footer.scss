@@ -2,11 +2,16 @@
     background-color: $main-color;
     font-family: $font-family;
     padding: 80px 80px 10px 30px;
+    @include media-sp {
+        padding: 40px 20px 30px;
+    }
+
     &-contents {//.l-footer-contents
         display: flex;
         flex-flow: row-reverse;
         justify-content: space-between;
         width: 100%;
+        position: relative;
         color: $sub-color;
         .right-content {
             -ms-writing-mode: tb-rl;
@@ -15,36 +20,39 @@
         .left-content {
             -ms-writing-mode: tb-rl;
             writing-mode: vertical-rl;
-
+            &::before {
+                content: "";
+                width: 14px;
+                height: 1px;
+                background-color: #fff;
+                position: absolute;
+                top: 163px;
+                left: 4px;
+            }
             a {
+                font-size: 1.4rem;
                 color: $sub-color;
-                padding: 7px 0;
                 position: relative;
-                &:first-child {
-                    padding: 0 0 7px;
-                    &::before {
-                        content: "";
-                        width: 100%;
-                        height: 1px;
-                        background-color: #fff;
-                        position: absolute;
-                        bottom: 0;
-                        left: 0;
-                        right: 0;
+                transition: all ease-in-out 0.3s ;
+                &:last-child {
+                    padding: 14px 0 0;
+                }
+                @include media-pc {
+                    transition: all ease-in-out 0.3s ;
+                    &:hover {
+                        opacity: 0.5;
                     }
                 }
-                &:hover {
-                    opacity: 0.5;
-                }
-
             }
-
         }
     }
     &-logo {
         display: inline-block;
         width: 40px;
         margin: 0 0 0 60px;
+        @include media-sp {
+            margin: 0 0 0 25px;
+        }
         img {
             width: 100%;
             height: auto;
@@ -52,6 +60,9 @@
     }
     &-contact {//.l-footer-contact
         margin: 0 0 0 60px;
+        @include media-sp {
+            margin: 0 0 0 25px;
+        }
         .vertical {
             text-orientation: upright;
         }
@@ -67,8 +78,15 @@
         margin: 0 0 0 25px;
         font-size: 1.6rem;
         color: $sub-color;
-        &:hover {
-            opacity: 0.5;
+        @include media-sp {
+            font-size: 1.4rem;
+            margin: 0 0 0 10px;
+        }
+        @include media-pc {
+            transition: all ease-in-out 0.3s ;
+            &:hover {
+                opacity: 0.5;
+            }
         }
     }
 
