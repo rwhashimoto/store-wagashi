@@ -16,6 +16,11 @@
         .company-info {
             -ms-writing-mode: tb-rl;
             writing-mode: vertical-rl;
+            .site-logo {
+                @include media-sp {
+                    margin: 0 0 0 25px;
+                }
+            }
             .contact {
                 margin: 0 0 0 60px;
                 @include media-sp {
@@ -23,6 +28,12 @@
                 }
                 .vertical {
                     text-orientation: upright;
+                }
+            }
+            .site-nav-item {
+                @include media-sp {
+                    font-size: 1.4rem;
+                    margin: 0 0 0 10px;
                 }
             }
         }
@@ -55,42 +66,7 @@
             }
         }
     }
-    &-logo {
-        display: inline-block;
-        width: 40px;
-        margin: 0 0 0 60px;
-        @include media-sp {
-            margin: 0 0 0 25px;
-        }
-        img {
-            width: 100%;
-            height: auto;
-        }
-    }
-    &-items {//.l-header-items
-        list-style: none;
-        display: flex;
-        flex-direction: column;
-    }
-
-    &-item {//.l-header-item
-        display: inline-block;
-        margin: 0 0 0 25px;
-        font-size: 1.6rem;
-        color: $sub-color;
-        @include media-sp {
-            font-size: 1.4rem;
-            margin: 0 0 0 10px;
-        }
-        @include media-pc {
-            transition: all ease-in-out 0.3s ;
-            &:hover {
-                opacity: 0.5;
-            }
-        }
-    }
-
-    &-copyright {//.l-footer-content
+    &-copyright {//.l-footer-copyright
         margin: 10px 0 0;
         text-align: center;
         font-size: 1.0rem;

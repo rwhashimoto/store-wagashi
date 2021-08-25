@@ -6,35 +6,13 @@
     background: url(/images/common/kv-pc.jpg);
     background-size:cover;
     background-position: center;
+    font-family: $font-family;
     -ms-writing-mode: tb-rl;
     writing-mode: vertical-rl;
-    font-family: $font-family;
     @include media-sp {
         background: url(/images/common/kv-sp.jpg);
         padding: 20px;
     }
-
-    &-logo {//.l-header-logo
-        display: inline-block;
-        width: 40px;
-        margin: 0 0 0 60px;
-        img {
-            width: 100%;
-            height: auto;
-        }
-    }
-
-    &-items {//.l-header-items
-        list-style: none;
-    }
-
-    &-item {//.l-header-item
-        display: inline-block;
-        margin: 0 0 0 25px;
-        font-size: 1.6rem;
-        color: $sub-color;
-    }
-
     &-online {//.l-header-online
         display: inline-block;
         position: absolute;
