@@ -6,7 +6,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>創作</title>
 		<meta name="description" content="Codestep 初級編：ストアサイト（和菓子）">
-		<link rel="icon" href="/images/favicon.ico">
+		<link rel="icon" href="/favicon.ico">
 		<link rel="stylesheet" href="./css/common.css">
 	</head>
 	<body>
@@ -25,48 +25,75 @@
 		</header>
 
 		<main class="l-main">
-			<div class="l-main-content">
-				<div class="l-main-title-wrapper">
-					<h2 class="l-main-title">お知らせ</h2>
-					<p class="l-main-lead">News</p>
-				</div>
-				<dl class="l-main-news">
-					<dt class="date">2021.01.01</dt>
-					<dd class="title">タイトルタイトルタイトルタイトル</dd>
-					<dt class="date">2021.01.01</dt>
-					<dd class="title">タイトルタイトルタイトルタイトル</dd>
-					<dt class="date">2021.01.01</dt>
-					<dd class="title">タイトルタイトルタイトルタイトル</dd>
-					<dt class="date">2021.01.01</dt>
-					<dd class="title">タイトルタイトルタイトルタイトル</dd>
-					<dt class="date">2021.01.01</dt>
-					<dd class="title">タイトルタイトルタイトルタイトル</dd>
-					<dt class="date">2021.01.01</dt>
-					<dd class="title">タイトルタイトルタイトルタイトル</dd>
-				</dl>
-			</div><!-- /.l-main-content -->
-			<div class="l-main-content">
-				<div class="l-main-title-wrapper">
-					<h2 class="l-main-title">新しい価値の創造</h2>
-					<p class="l-main-lead">Create New Values</p>
-				</div>
-				<div class="l-main-product">
-					<img class="product-img" src="/images/common/products_001.jpg" alt="products_001" >
-					<p class="product-text">テキストテキスト<br>テキストテキスト</p>
-				</div>
-			</div><!-- /.l-main-content -->
-			<div class="l-main-content">
-				<div class="l-main-title-wrapper">
-					<h2 class="l-main-title">科学と技術の調和</h2>
-					<p class="l-main-lead">Science & Technology</p>
-				</div>
-				<div class="l-main-product">
-					<img class="product-img" src="/images/common/products_002.jpg" alt="products_002" >
-					<p class="product-text">テキストテキスト<br>テキストテキスト</p>
-				</div>
-			</div><!-- /.l-main-content -->
+			<div class="l-main-inner">
+				<section class="l-main-news">
+					<div class="l-main-title flex">
+						<h2 class="head">お知らせ</h2>
+						<p class="lead">News</p>
+					</div>
+					<ul class="news-list">
+						<li class="news-list-item">
+							<a href="DUMMY">
+								<span class="date">2021.01.01</span>
+								<span class="ttl">タイトルタイトルタイトルタイトル</span>
+							</a>
+						</li>
+						<li class="news-list-item">
+							<a href="DUMMY">
+								<span class="date">2021.01.01</span>
+								<span class="ttl">タイトルタイトルタイトルタイトル</span>
+							</a>
+						</li>
+						<li class="news-list-item">
+							<a href="DUMMY">
+								<span class="date">2021.01.01</span>
+								<span class="ttl">タイトルタイトルタイトルタイトル</span>
+							</a>
+						</li>
+						<li class="news-list-item sp">
+							<a href="DUMMY">
+								<span class="date">2021.01.01</span>
+								<span class="ttl">タイトルタイトルタイトルタイトル</span>
+							</a>
+						</li>
+						<li class="news-list-item sp">
+							<a href="DUMMY">
+								<span class="date">2021.01.01</span>
+								<span class="ttl">タイトルタイトルタイトルタイトル</span>
+							</a>
+						</li>
+					</ul>
+				</section>
+
+				<section class="l-main-product product01">
+					<div class="l-main-title">
+						<h2 class="head">新しい価値の創造</h2>
+						<p class="lead">Create New Values</p>
+					</div>
+					<a href="dummy" class="product-content">
+						<figure class="product-img">
+							<img src="/images/common/products_001.jpg" alt="products1" >
+						</figure>
+						<p class="product-text">テキストテキスト<br>テキストテキスト</p>
+					</a>
+				</section>
+
+				<section class="l-main-product product02">
+					<div class="l-main-title">
+						<h2 class="head">科学と技術の調和</h2>
+						<p class="lead">Science & Technology</p>
+					</div>
+					<a href="dummy" class="product-content">
+						<figure class="product-img">
+							<img src="/images/common/products_002.jpg" alt="products2" >
+						</figure>
+						<p class="product-text">テキストテキスト<br>テキストテキスト</p>
+					</a>
+				</section>
+
+			</div><!-- /.l-main-inner -->
 			<div class="l-main-map">
-				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.6829844544086!2d139.73287236555052!3d35.66018143873296!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b9c2ef8e6c3%3A0xff8de5eeddcd1e17!2z44CSMTA2LTAwMzIg5p2x5Lqs6YO95riv5Yy65YWt5pys5pyo77yV5LiB55uu!5e0!3m2!1sja!2sjp!4v1629697579446!5m2!1sja!2sjp" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6483.366327608531!2d139.7306836761453!3d35.66017702079668!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b9c2ef8e6c3%3A0xff8de5eeddcd1e17!2z44CSMTA2LTAwMzIg5p2x5Lqs6YO95riv5Yy65YWt5pys5pyo77yV5LiB55uu!5e0!3m2!1sja!2sjp!4v1629850359297!5m2!1sja!2sjp" width="800" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 			</div>
 		</main>
 

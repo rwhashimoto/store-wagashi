@@ -1,9 +1,158 @@
-.l-main {
+.l-main {//.l-main
+    margin: 0 auto;
+    background-color: $bg-color;
     font-family: $font-family;
-    p{
-        background-color: red;
+    &-inner {//.l-main-inner
+        max-width: 1024px;
+        margin: 0 auto;
+        padding: 0 2%;
+    }
+
+    &-title{//.l-main-title
+        -ms-writing-mode: tb-rl;
+        writing-mode: vertical-rl;
+        display: flex;
+        align-items: center;
+        .head {
+            font-size: 3.6rem;
+            @include media-sp{
+                font-size: 2.8rem;
+            }
+        }
+        .lead {
+            margin: 18px 0 0;
+            font-size: 1.4rem;
+            @include media-sp{
+                display: none;
+            }
+        }
+    }
+    &-title.flex{//.l-main-title
+        flex-direction: column-reverse;
+        align-items: flex-start;
+        .lead {
+            margin: 0;
+        }
+    }
+
+    &-news {//.l-main-news
+        display: flex;
+        flex-flow: row-reverse;
+        padding: 180px 0 0;
         @include media-sp{
-            background-color: green;
+            padding: 80px 0 0;
+        }
+        .news-list {
+            margin: 0 87px 0 0;
+            height: 290px;
+            -ms-writing-mode: tb-rl;
+            writing-mode: vertical-rl;
+            position: relative;
+            @include media-sp{
+                margin: 0 30px 0 0;
+            }
+            &::after {
+                content: "";
+                width: 1px;
+                height: 290px;
+                background-color: $main-color;
+                position: absolute;
+            }
+        }
+        .news-list-item {
+            padding: 10px 30px;
+            list-style: none;
+            border-right: 1px solid $main-color;
+            @include media-sp{
+                padding: 12px;
+            }
+            @include media-pc{
+                transition: all ease-in-out 0.3s ;
+                &:hover {
+                    opacity: 0.5;
+                }
+            }
+            .date {
+                display: block;
+                color: $main-color;
+            }
+            .ttl {
+                display: block;
+                color: $main-color;
+            }
+        }
+        .news-list-item.sp{
+            @include media-sp{
+                display: none;
+            }
+        }
+    }
+
+    &-product {//.l-main-product
+        display: flex;
+        margin: 180px 0 0;
+        @include media-sp{
+            margin: 85px 0 0;
+        }
+        .product-content {
+            margin: 100px 20px 0;
+            position: relative;
+            @include media-sp{
+                margin: 70px 10px 0;
+            }
+            @include media-pc{
+                transition: all ease-in-out 0.3s ;
+                &:hover {
+                    opacity: 0.5;
+                }
+            }
+            .product-img {
+                width: 639px;
+                @include media-sp{
+                    width: 100%;
+                }
+                img {
+                    width: 100%;
+                    height: auto;
+                    vertical-align: top;
+                }
+            }
+            .product-text {
+                opacity: 0.6;
+                display: inline-block;
+                padding: 50px 115px;
+                position: absolute;
+                bottom: -20px;
+                font-size: 1.6rem;
+                color: $sub-color;
+                @include media-sp{
+                    padding: 30px 40px;
+                    font-size: 1.4rem;
+                }
+            }
+        }
+        &.product01 {
+            flex-flow: row-reverse;
+            .product-text {
+                background-color: $product01-color;
+                left: -20px;
+            }
+        }
+        &.product02 {
+            .product-text {
+                background-color: $product02-color;
+                right: -20px;
+            }
+        }
+    }
+
+    &-map {//.l-main-map
+        margin: 180px 0 0;
+        @include media-sp{
+            margin: 100px 0 0;
+        }
+        iframe {
+            width: 100%;
         }
     }
 }
