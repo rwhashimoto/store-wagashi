@@ -2,11 +2,6 @@
     margin: 0 auto;
     background-color: $bg-color;
     font-family: $font-family;
-    &-inner {//.l-main-inner
-        max-width: 1024px;
-        margin: 0 auto;
-        padding: 0 2%;
-    }
 
     &-title{//.l-main-title
         -ms-writing-mode: tb-rl;
@@ -38,9 +33,11 @@
     &-news {//.l-main-news
         display: flex;
         flex-flow: row-reverse;
-        padding: 180px 0 0;
+        padding: 180px 2% 0;
+        max-width: 1024px;
+        margin: 0 auto;
         @include media-sp{
-            padding: 80px 0 0;
+            padding: 80px 2% 0;
         }
         .news-list {
             margin: 0 87px 0 0;
@@ -90,16 +87,15 @@
 
     &-product {//.l-main-product
         display: flex;
-        margin: 180px 0 0;
+        margin: 180px auto 0;
+        max-width: 1024px;
+        padding: 0 2%;
         @include media-sp{
             margin: 85px 0 0;
         }
         .product-content {
             margin: 100px 20px 0;
             position: relative;
-            @include media-sp{
-                margin: 70px 10px 0;
-            }
             @include media-pc{
                 transition: all ease-in-out 0.3s ;
                 &:hover {
@@ -133,12 +129,28 @@
         }
         &.product01 {
             flex-flow: row-reverse;
+            @include media-sp{
+                padding: 0 2% 0 0;
+            }
+            .product-content {
+                @include media-sp{
+                    margin: 70px 10px 0 20px;
+                }
+            }
             .product-text {
                 background-color: $product01-color;
                 left: -20px;
             }
         }
         &.product02 {
+            @include media-sp{
+                padding: 0 0 0 2%;
+            }
+            .product-content {
+                @include media-sp{
+                    margin: 70px 20px 0 10px;
+                }
+            }
             .product-text {
                 background-color: $product02-color;
                 right: -20px;
