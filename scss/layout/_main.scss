@@ -66,6 +66,12 @@
             @include media-sp{
                 padding: 12px;
             }
+            @include media-pc{
+                transition: all ease-in-out 0.3s ;
+                &:hover {
+                    opacity: 0.5;
+                }
+            }
             .date {
                 display: block;
                 color: $main-color;
@@ -93,6 +99,12 @@
             position: relative;
             @include media-sp{
                 margin: 70px 10px 0;
+            }
+            @include media-pc{
+                transition: all ease-in-out 0.3s ;
+                &:hover {
+                    opacity: 0.5;
+                }
             }
             .product-img {
                 width: 639px;
