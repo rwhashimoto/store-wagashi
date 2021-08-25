@@ -1,0 +1,81 @@
+.l-footer {//.l-footer
+    background-color: $main-color;
+    font-family: $font-family;
+    padding: 80px 80px 10px 30px;
+    &-contents {//.l-footer-contents
+        display: flex;
+        flex-flow: row-reverse;
+        justify-content: space-between;
+        width: 100%;
+        color: $sub-color;
+        .right-content {
+            -ms-writing-mode: tb-rl;
+            writing-mode: vertical-rl;
+        }
+        .left-content {
+            -ms-writing-mode: tb-rl;
+            writing-mode: vertical-rl;
+
+            a {
+                color: $sub-color;
+                padding: 7px 0;
+                position: relative;
+                &:first-child {
+                    padding: 0 0 7px;
+                    &::before {
+                        content: "";
+                        width: 100%;
+                        height: 1px;
+                        background-color: #fff;
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                        right: 0;
+                    }
+                }
+                &:hover {
+                    opacity: 0.5;
+                }
+
+            }
+
+        }
+    }
+    &-logo {
+        display: inline-block;
+        width: 40px;
+        margin: 0 0 0 60px;
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+    &-contact {//.l-footer-contact
+        margin: 0 0 0 60px;
+        .vertical {
+            text-orientation: upright;
+        }
+    }
+    &-items {//.l-header-items
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &-item {//.l-header-item
+        display: inline-block;
+        margin: 0 0 0 25px;
+        font-size: 1.6rem;
+        color: $sub-color;
+        &:hover {
+            opacity: 0.5;
+        }
+    }
+
+    &-copyright {//.l-footer-content
+        margin: 10px 0 0;
+        text-align: center;
+        font-size: 1.0rem;
+        color: $sub-color;
+    }
+}
