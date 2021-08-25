@@ -338,33 +338,15 @@ a {
   background: url(/images/common/kv-pc.jpg);
   background-size: cover;
   background-position: center;
+  font-family: "游明朝", "Yu Mincho", "YuMincho", "ヒラギノ明朝 Pro", "Hiragino Mincho Pro", "MS P明朝", "MS PMincho", serif;
   -ms-writing-mode: tb-rl;
   writing-mode: vertical-rl;
-  font-family: "游明朝", "Yu Mincho", "YuMincho", "ヒラギノ明朝 Pro", "Hiragino Mincho Pro", "MS P明朝", "MS PMincho", serif;
 }
 @media screen and (max-width: 768px) {
   .l-header {
     background: url(/images/common/kv-sp.jpg);
     padding: 20px;
   }
-}
-.l-header-logo {
-  display: inline-block;
-  width: 40px;
-  margin: 0 0 0 60px;
-}
-.l-header-logo img {
-  width: 100%;
-  height: auto;
-}
-.l-header-items {
-  list-style: none;
-}
-.l-header-item {
-  display: inline-block;
-  margin: 0 0 0 25px;
-  font-size: 1.6rem;
-  color: #fff;
 }
 .l-header-online {
   display: inline-block;
@@ -409,6 +391,11 @@ a {
   -ms-writing-mode: tb-rl;
   writing-mode: vertical-rl;
 }
+@media screen and (max-width: 768px) {
+  .l-footer-content .company-info .site-logo {
+    margin: 0 0 0 25px;
+  }
+}
 .l-footer-content .company-info .contact {
   margin: 0 0 0 60px;
 }
@@ -419,6 +406,12 @@ a {
 }
 .l-footer-content .company-info .contact .vertical {
   text-orientation: upright;
+}
+@media screen and (max-width: 768px) {
+  .l-footer-content .company-info .site-nav-item {
+    font-size: 1.4rem;
+    margin: 0 0 0 10px;
+  }
 }
 .l-footer-content .links {
   -ms-writing-mode: tb-rl;
@@ -447,45 +440,6 @@ a {
     transition: all ease-in-out 0.3s;
   }
   .l-footer-content .links .link:hover {
-    opacity: 0.5;
-  }
-}
-.l-footer-logo {
-  display: inline-block;
-  width: 40px;
-  margin: 0 0 0 60px;
-}
-@media screen and (max-width: 768px) {
-  .l-footer-logo {
-    margin: 0 0 0 25px;
-  }
-}
-.l-footer-logo img {
-  width: 100%;
-  height: auto;
-}
-.l-footer-items {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-}
-.l-footer-item {
-  display: inline-block;
-  margin: 0 0 0 25px;
-  font-size: 1.6rem;
-  color: #fff;
-}
-@media screen and (max-width: 768px) {
-  .l-footer-item {
-    font-size: 1.4rem;
-    margin: 0 0 0 10px;
-  }
-}
-@media screen and (min-width: 769px) {
-  .l-footer-item {
-    transition: all ease-in-out 0.3s;
-  }
-  .l-footer-item:hover {
     opacity: 0.5;
   }
 }
@@ -671,4 +625,41 @@ a {
 }
 .l-main-map iframe {
   width: 100%;
+  vertical-align: top;
+}
+
+.site-logo {
+  display: inline-block;
+  width: 40px;
+  margin: 0 0 0 60px;
+}
+@media screen and (min-width: 769px) {
+  .site-logo {
+    transition: all ease-in-out 0.3s;
+  }
+  .site-logo:hover {
+    opacity: 0.5;
+  }
+}
+.site-logo img {
+  width: 100%;
+  height: auto;
+}
+
+.site-nav {
+  list-style: none;
+}
+.site-nav .site-nav-item {
+  display: inline-block;
+  margin: 0 0 0 25px;
+  font-size: 1.6rem;
+  color: #fff;
+}
+@media screen and (min-width: 769px) {
+  .site-nav .site-nav-item {
+    transition: all ease-in-out 0.3s;
+  }
+  .site-nav .site-nav-item:hover {
+    opacity: 0.5;
+  }
 }/*# sourceMappingURL=common.css.map */
