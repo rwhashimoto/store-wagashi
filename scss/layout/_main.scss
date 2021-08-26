@@ -33,15 +33,15 @@
     &-news {//.l-main-news
         display: flex;
         flex-flow: row-reverse;
-        padding: 180px 2% 0;
+        padding: 185px 2% 0;
         max-width: 1024px;
         margin: 0 auto;
         @include media-sp{
             padding: 80px 2% 0;
         }
         .news-list {
-            margin: 0 87px 0 0;
-            height: 290px;
+            margin: 75px 87px 0 0;
+            height: 293px;
             -ms-writing-mode: tb-rl;
             writing-mode: vertical-rl;
             position: relative;
@@ -57,7 +57,7 @@
             }
         }
         .news-list-item {
-            padding: 10px 30px;
+            padding: 16px 24px 16px 21px;
             list-style: none;
             border-right: 1px solid $main-color;
             @include media-sp{
@@ -87,14 +87,12 @@
 
     &-product {//.l-main-product
         display: flex;
-        margin: 180px auto 0;
+        margin: 185px auto 0;
         max-width: 1024px;
-        padding: 0 2%;
         @include media-sp{
             margin: 85px 0 0;
         }
         .product-content {
-            margin: 100px 20px 0;
             position: relative;
             @include media-pc{
                 transition: all ease-in-out 0.3s ;
@@ -116,11 +114,12 @@
             .product-text {
                 opacity: 0.6;
                 display: inline-block;
-                padding: 50px 115px;
+                padding: 53px 115px;
                 position: absolute;
                 bottom: -20px;
                 font-size: 1.6rem;
                 color: $sub-color;
+                line-height: 1;
                 @include media-sp{
                     padding: 30px 40px;
                     font-size: 1.4rem;
@@ -129,10 +128,12 @@
         }
         &.product01 {
             flex-flow: row-reverse;
+            padding: 0 2% 0 0;
             @include media-sp{
                 padding: 0 2% 0 0;
             }
             .product-content {
+                margin: 95px 5px 0 20px;
                 @include media-sp{
                     margin: 70px 10px 0 20px;
                 }
@@ -143,10 +144,13 @@
             }
         }
         &.product02 {
+            max-width: 1134px;
+            padding: 0 0 0 2%;
             @include media-sp{
                 padding: 0 0 0 2%;
             }
             .product-content {
+                margin: 95px 20px 0 10px;
                 @include media-sp{
                     margin: 70px 20px 0 10px;
                 }

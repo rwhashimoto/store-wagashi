@@ -18,14 +18,14 @@
         position: absolute;
         bottom: 30px;
         left: 40px;
-        padding: 26px 38px;
+        padding: 9px 21px;
         background-color: $online-color;
         @include media-sp {
             bottom: 20px;
             left: 20px;
         }
         a {
-            padding: 30px 18px;
+            padding: 31px 14px;
             font-size: 1.6rem;
             color: $sub-color;
             border: 1px solid $sub-color;

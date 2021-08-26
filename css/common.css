@@ -353,7 +353,7 @@ a {
   position: absolute;
   bottom: 30px;
   left: 40px;
-  padding: 26px 38px;
+  padding: 9px 21px;
   background-color: #707070;
 }
 @media screen and (max-width: 768px) {
@@ -363,7 +363,7 @@ a {
   }
 }
 .l-header-online a {
-  padding: 30px 18px;
+  padding: 31px 14px;
   font-size: 1.6rem;
   color: #fff;
   border: 1px solid #fff;
@@ -372,7 +372,7 @@ a {
 .l-footer {
   background-color: #000;
   font-family: "游明朝", "Yu Mincho", "YuMincho", "ヒラギノ明朝 Pro", "Hiragino Mincho Pro", "MS P明朝", "MS PMincho", serif;
-  padding: 80px 80px 10px 30px;
+  padding: 80px 80px 10px 23px;
 }
 @media screen and (max-width: 768px) {
   .l-footer {
@@ -391,13 +391,16 @@ a {
   -ms-writing-mode: tb-rl;
   writing-mode: vertical-rl;
 }
+.l-footer-content .company-info .site-logo {
+  margin: 0 0 0 55px;
+}
 @media screen and (max-width: 768px) {
   .l-footer-content .company-info .site-logo {
     margin: 0 0 0 25px;
   }
 }
 .l-footer-content .company-info .contact {
-  margin: 0 0 0 60px;
+  margin: 0 0 0 55px;
 }
 @media screen and (max-width: 768px) {
   .l-footer-content .company-info .contact {
@@ -488,7 +491,7 @@ a {
 .l-main-news {
   display: flex;
   flex-flow: row-reverse;
-  padding: 180px 2% 0;
+  padding: 185px 2% 0;
   max-width: 1024px;
   margin: 0 auto;
 }
@@ -498,8 +501,8 @@ a {
   }
 }
 .l-main-news .news-list {
-  margin: 0 87px 0 0;
-  height: 290px;
+  margin: 75px 87px 0 0;
+  height: 293px;
   -ms-writing-mode: tb-rl;
   writing-mode: vertical-rl;
   position: relative;
@@ -517,7 +520,7 @@ a {
   position: absolute;
 }
 .l-main-news .news-list-item {
-  padding: 10px 30px;
+  padding: 16px 24px 16px 21px;
   list-style: none;
   border-right: 1px solid #000;
 }
@@ -549,9 +552,8 @@ a {
 }
 .l-main-product {
   display: flex;
-  margin: 180px auto 0;
+  margin: 185px auto 0;
   max-width: 1024px;
-  padding: 0 2%;
 }
 @media screen and (max-width: 768px) {
   .l-main-product {
@@ -559,7 +561,6 @@ a {
   }
 }
 .l-main-product .product-content {
-  margin: 100px 20px 0;
   position: relative;
 }
 @media screen and (min-width: 769px) {
@@ -586,11 +587,12 @@ a {
 .l-main-product .product-content .product-text {
   opacity: 0.6;
   display: inline-block;
-  padding: 50px 115px;
+  padding: 53px 115px;
   position: absolute;
   bottom: -20px;
   font-size: 1.6rem;
   color: #fff;
+  line-height: 1;
 }
 @media screen and (max-width: 768px) {
   .l-main-product .product-content .product-text {
@@ -600,11 +602,15 @@ a {
 }
 .l-main-product.product01 {
   flex-flow: row-reverse;
+  padding: 0 2% 0 0;
 }
 @media screen and (max-width: 768px) {
   .l-main-product.product01 {
     padding: 0 2% 0 0;
   }
+}
+.l-main-product.product01 .product-content {
+  margin: 95px 5px 0 20px;
 }
 @media screen and (max-width: 768px) {
   .l-main-product.product01 .product-content {
@@ -615,10 +621,17 @@ a {
   background-color: #F9E906;
   left: -20px;
 }
+.l-main-product.product02 {
+  max-width: 1134px;
+  padding: 0 0 0 2%;
+}
 @media screen and (max-width: 768px) {
   .l-main-product.product02 {
     padding: 0 0 0 2%;
   }
+}
+.l-main-product.product02 .product-content {
+  margin: 95px 20px 0 10px;
 }
 @media screen and (max-width: 768px) {
   .l-main-product.product02 .product-content {
@@ -665,7 +678,7 @@ a {
 }
 .site-nav .site-nav-item {
   display: inline-block;
-  margin: 0 0 0 25px;
+  margin: 0 0 0 13px;
   font-size: 1.6rem;
   color: #fff;
 }

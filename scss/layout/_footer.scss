@@ -1,7 +1,7 @@
 .l-footer {//.l-footer
     background-color: $main-color;
     font-family: $font-family;
-    padding: 80px 80px 10px 30px;
+    padding: 80px 80px 10px 23px;
     @include media-sp {
         padding: 40px 20px 30px;
     }
@@ -17,12 +17,13 @@
             -ms-writing-mode: tb-rl;
             writing-mode: vertical-rl;
             .site-logo {
+                margin: 0 0 0 55px;
                 @include media-sp {
                     margin: 0 0 0 25px;
                 }
             }
             .contact {
-                margin: 0 0 0 60px;
+                margin: 0 0 0 55px;
                 @include media-sp {
                     margin: 0 0 0 25px;
                 }
