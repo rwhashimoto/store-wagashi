@@ -3,7 +3,7 @@
     font-family: $font-family;
     padding: 80px 80px 10px 23px;
     @include media-sp {
-        padding: 40px 20px 30px;
+        padding: 40px 20px 30px 16px;
     }
 
     &-content {//.l-footer-content
@@ -19,13 +19,13 @@
             .site-logo {
                 margin: 0 0 0 55px;
                 @include media-sp {
-                    margin: 0 0 0 25px;
+                    margin: 0 0 0 20px;
                 }
             }
             .contact {
                 margin: 0 0 0 55px;
                 @include media-sp {
-                    margin: 0 0 0 25px;
+                    margin: 0 0 0 15px;
                 }
                 .vertical {
                     text-orientation: upright;
@@ -34,7 +34,7 @@
             .site-nav-item {
                 @include media-sp {
                     font-size: 1.4rem;
-                    margin: 0 0 0 10px;
+                    margin: 0 0 0 3px;
                 }
             }
         }
@@ -72,5 +72,8 @@
         text-align: center;
         font-size: 1.0rem;
         color: $sub-color;
+        @include media-sp {
+            margin: 20px 0 0;
+        }
     }
 }
