@@ -578,14 +578,6 @@ a {
 .l-main-product .product-content {
   position: relative;
 }
-@media screen and (min-width: 769px) {
-  .l-main-product .product-content {
-    transition: all ease-in-out 0.3s;
-  }
-  .l-main-product .product-content:hover {
-    opacity: 0.5;
-  }
-}
 .l-main-product .product-content .product-img {
   max-width: 639px;
 }

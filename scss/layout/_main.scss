@@ -102,12 +102,6 @@
         }
         .product-content {
             position: relative;
-            @include media-pc{
-                transition: all ease-in-out 0.3s ;
-                &:hover {
-                    opacity: 0.5;
-                }
-            }
             .product-img {
                 max-width: 639px;
                 @include media-sp{
