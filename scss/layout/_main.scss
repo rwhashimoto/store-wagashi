@@ -86,7 +86,7 @@
                 color: $main-color;
             }
         }
-        .news-list-item.sp{
+        :nth-of-type(n + 4) {
             @include media-sp{
                 display: none;
             }

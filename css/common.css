@@ -561,7 +561,7 @@ a {
   color: #000;
 }
 @media screen and (max-width: 768px) {
-  .l-main-news .news-list-item.sp {
+  .l-main-news :nth-of-type(n + 4) {
     display: none;
   }
 }
