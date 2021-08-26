@@ -1,7 +1,7 @@
 .l-footer {//.l-footer
+    padding: 80px 80px 10px 23px;
     background-color: $main-color;
     font-family: $font-family;
-    padding: 80px 80px 10px 23px;
     @include media-sp {
         padding: 40px 20px 30px 16px;
     }
@@ -10,8 +10,8 @@
         display: flex;
         flex-flow: row-reverse;
         justify-content: space-between;
-        width: 100%;
         position: relative;
+        width: 100%;
         color: $sub-color;
         .company-info {
             -ms-writing-mode: tb-rl;
@@ -43,17 +43,17 @@
             writing-mode: vertical-rl;
             &::before {
                 content: "";
-                width: 14px;
-                height: 1px;
-                background-color: #fff;
                 position: absolute;
                 top: 163px;
                 left: 4px;
+                width: 14px;
+                height: 1px;
+                background-color: #fff;
             }
             .link {
-                font-size: 1.4rem;
-                color: $sub-color;
                 position: relative;
+                color: $sub-color;
+                font-size: 1.4rem;
                 transition: all ease-in-out 0.3s ;
                 &:last-child {
                     padding: 14px 0 0;
@@ -69,9 +69,9 @@
     }
     &-copyright {//.l-footer-copyright
         margin: 10px 0 0;
-        text-align: center;
-        font-size: 1.0rem;
         color: $sub-color;
+        font-size: 1.0rem;
+        text-align: center;
         @include media-sp {
             margin: 20px 0 0;
         }
