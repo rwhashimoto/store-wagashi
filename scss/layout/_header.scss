@@ -14,21 +14,34 @@
         padding: 20px;
     }
     &-online {//.l-header-online
-        display: inline-block;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         position: absolute;
         bottom: 30px;
         left: 40px;
-        padding: 9px 21px;
+        width: 68px;
+        height: 257px;
         background-color: $online-color;
         @include media-sp {
             bottom: 20px;
             left: 20px;
         }
         a {
-            padding: 31px 14px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 52px;
+            height: 242px;
             font-size: 1.6rem;
             color: $sub-color;
             border: 1px solid $sub-color;
+        }
+        @include media-pc {
+            transition: all ease-in-out 0.3s;
+            &:hover {
+                opacity: 0.5;
+            }
         }
     }
 }
