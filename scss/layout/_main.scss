@@ -4,36 +4,34 @@
     font-family: $font-family;
 
     &-title{//.l-main-title
-        -ms-writing-mode: tb-rl;
-        writing-mode: vertical-rl;
         display: flex;
         align-items: center;
+        -ms-writing-mode: tb-rl;
+        writing-mode: vertical-rl;
         .head {
             font-size: 3.6rem;
             @include media-sp{
                 font-size: 2.4rem;
             }
         }
-        .lead {
-            margin: 18px 0 0;
-            font-size: 1.4rem;
+        .en {
+            margin: 23px 0 0;
             @include media-sp{
                 display: none;
             }
         }
-    }
-    &-title.flex{//.l-main-title
-        flex-direction: column-reverse;
-        align-items: flex-start;
-        .head {
-            @include media-sp{
-                font-size: 2.8rem;
+        &.flex {
+            flex-direction: column-reverse;
+            align-items: flex-start;
+            .head {
+                @include media-sp{
+                    margin: 0 7px 0 0;
+                    font-size: 2.8rem;
+                }
             }
-        }
-        .lead {
-            margin: 0;
-            @include media-sp{
+            .en {
                 display: block;
+                margin: 0;
             }
         }
     }
