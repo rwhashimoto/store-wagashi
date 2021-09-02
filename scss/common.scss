@@ -3,7 +3,6 @@
 @import './setting/color';
 
 //foundation
-@import './foundation/base';
 @import './foundation/reset';
 
 //mixin
@@ -14,6 +13,3 @@
 @import './layout/header';
 @import './layout/footer';
 @import './layout/main';
-
-//setting
-@import './component/common';
