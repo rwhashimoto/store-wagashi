@@ -327,6 +327,7 @@ html {
 p,
 a {
   font-size: 1.4rem;
+  line-height: 1.5;
   text-decoration: none;
 }
 
@@ -348,12 +349,49 @@ a {
     padding: 20px;
   }
 }
-.l-header-online {
+.l-header .site-logo {
   display: inline-block;
+  width: 40px;
+  margin: 0 0 0 60px;
+}
+@media screen and (min-width: 769px) {
+  .l-header .site-logo {
+    transition: all ease-in-out 0.3s;
+  }
+  .l-header .site-logo:hover {
+    opacity: 0.5;
+  }
+}
+.l-header .site-logo img {
+  width: 100%;
+  height: auto;
+}
+.l-header .site-nav {
+  list-style: none;
+}
+.l-header .site-nav .site-nav-item {
+  display: inline-block;
+  margin: 0 0 0 13px;
+  color: #fff;
+  font-size: 1.6rem;
+}
+@media screen and (min-width: 769px) {
+  .l-header .site-nav .site-nav-item {
+    transition: all ease-in-out 0.3s;
+  }
+  .l-header .site-nav .site-nav-item:hover {
+    opacity: 0.5;
+  }
+}
+.l-header-online {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: absolute;
   bottom: 30px;
   left: 40px;
-  padding: 9px 21px;
+  width: 68px;
+  height: 257px;
   background-color: #707070;
 }
 @media screen and (max-width: 768px) {
@@ -363,10 +401,22 @@ a {
   }
 }
 .l-header-online a {
-  padding: 31px 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 52px;
+  height: 242px;
   font-size: 1.6rem;
   color: #fff;
   border: 1px solid #fff;
+}
+@media screen and (min-width: 769px) {
+  .l-header-online {
+    transition: all ease-in-out 0.3s;
+  }
+  .l-header-online:hover {
+    opacity: 0.5;
+  }
 }
 
 .l-footer {
@@ -390,6 +440,40 @@ a {
 .l-footer-content .company-info {
   -ms-writing-mode: tb-rl;
   writing-mode: vertical-rl;
+}
+.l-footer-content .company-info .site-logo {
+  display: inline-block;
+  width: 40px;
+  margin: 0 0 0 60px;
+}
+@media screen and (min-width: 769px) {
+  .l-footer-content .company-info .site-logo {
+    transition: all ease-in-out 0.3s;
+  }
+  .l-footer-content .company-info .site-logo:hover {
+    opacity: 0.5;
+  }
+}
+.l-footer-content .company-info .site-logo img {
+  width: 100%;
+  height: auto;
+}
+.l-footer-content .company-info .site-nav {
+  list-style: none;
+}
+.l-footer-content .company-info .site-nav .site-nav-item {
+  display: inline-block;
+  margin: 0 0 0 13px;
+  color: #fff;
+  font-size: 1.6rem;
+}
+@media screen and (min-width: 769px) {
+  .l-footer-content .company-info .site-nav .site-nav-item {
+    transition: all ease-in-out 0.3s;
+  }
+  .l-footer-content .company-info .site-nav .site-nav-item:hover {
+    opacity: 0.5;
+  }
 }
 .l-footer-content .company-info .site-logo {
   margin: 0 0 0 55px;
@@ -464,10 +548,10 @@ a {
   font-family: "游明朝", "Yu Mincho", "YuMincho", "ヒラギノ明朝 Pro", "Hiragino Mincho Pro", "MS P明朝", "MS PMincho", serif;
 }
 .l-main-title {
-  -ms-writing-mode: tb-rl;
-  writing-mode: vertical-rl;
   display: flex;
   align-items: center;
+  -ms-writing-mode: tb-rl;
+  writing-mode: vertical-rl;
 }
 .l-main-title .head {
   font-size: 3.6rem;
@@ -477,12 +561,11 @@ a {
     font-size: 2.4rem;
   }
 }
-.l-main-title .lead {
-  margin: 18px 0 0;
-  font-size: 1.4rem;
+.l-main-title .en {
+  margin: 23px 0 0;
 }
 @media screen and (max-width: 768px) {
-  .l-main-title .lead {
+  .l-main-title .en {
     display: none;
   }
 }
@@ -492,16 +575,13 @@ a {
 }
 @media screen and (max-width: 768px) {
   .l-main-title.flex .head {
+    margin: 0 7px 0 0;
     font-size: 2.8rem;
   }
 }
-.l-main-title.flex .lead {
+.l-main-title.flex .en {
+  display: block;
   margin: 0;
-}
-@media screen and (max-width: 768px) {
-  .l-main-title.flex .lead {
-    display: block;
-  }
 }
 .l-main-news {
   display: flex;
@@ -535,20 +615,23 @@ a {
   position: absolute;
 }
 .l-main-news .news-list-item {
-  padding: 16px 24px 16px 21px;
   list-style: none;
   border-right: 1px solid #000;
 }
+.l-main-news .news-list-item a {
+  display: block;
+  padding: 16px 24px 16px 23px;
+}
 @media screen and (max-width: 768px) {
-  .l-main-news .news-list-item {
+  .l-main-news .news-list-item a {
     padding: 16px 5px 16px 4px;
   }
 }
 @media screen and (min-width: 769px) {
-  .l-main-news .news-list-item {
+  .l-main-news .news-list-item a {
     transition: all ease-in-out 0.3s;
   }
-  .l-main-news .news-list-item:hover {
+  .l-main-news .news-list-item a:hover {
     opacity: 0.5;
   }
 }
@@ -567,13 +650,6 @@ a {
 }
 .l-main-product {
   display: flex;
-  margin: 185px auto 0;
-  max-width: 1024px;
-}
-@media screen and (max-width: 768px) {
-  .l-main-product {
-    margin: 85px 0 0;
-  }
 }
 .l-main-product .product-content {
   position: relative;
@@ -596,33 +672,36 @@ a {
   position: absolute;
   bottom: -20px;
   width: 56%;
-  padding: 53px 0;
+  padding: 44px 0;
   color: #fff;
   font-size: 1.6rem;
-  line-height: 1;
   text-align: center;
 }
 @media screen and (max-width: 768px) {
   .l-main-product .product-content .product-text {
-    padding: 34px 0;
+    padding: 25px 0;
+    width: 64%;
     font-size: 1.4rem;
   }
 }
 .l-main-product.product01 {
   flex-flow: row-reverse;
-  padding: 0 2% 0 0;
+  max-width: 1024px;
+  margin: 185px auto 0;
+  padding: 0 30px 20px 20px;
 }
 @media screen and (max-width: 768px) {
   .l-main-product.product01 {
-    padding: 0 3% 0 0;
+    margin: 85px 0 0;
+    padding: 0 15px 20px 20px;
   }
 }
 .l-main-product.product01 .product-content {
-  margin: 95px 5px 0 20px;
+  margin: 95px 10px 0 0;
 }
 @media screen and (max-width: 768px) {
   .l-main-product.product01 .product-content {
-    margin: 65px 5px 0 20px;
+    margin: 65px 0 0 0;
   }
 }
 .l-main-product.product01 .product-text {
@@ -630,20 +709,22 @@ a {
   left: -20px;
 }
 .l-main-product.product02 {
-  max-width: 1134px;
-  padding: 0 0 0 2%;
+  max-width: 1104px;
+  margin: 163px auto 0;
+  padding: 0 20px 20px 30px;
 }
 @media screen and (max-width: 768px) {
   .l-main-product.product02 {
-    padding: 0 0 0 3%;
+    margin: 75px 0 0;
+    padding: 0 20px 20px 15px;
   }
 }
 .l-main-product.product02 .product-content {
-  margin: 95px 20px 0 10px;
+  margin: 95px 0 0 10px;
 }
 @media screen and (max-width: 768px) {
   .l-main-product.product02 .product-content {
-    margin: 65px 20px 0 5px;
+    margin: 65px 0 0 0;
   }
 }
 .l-main-product.product02 .product-text {
@@ -651,50 +732,14 @@ a {
   right: -20px;
 }
 .l-main-map {
-  margin: 180px 0 0;
+  margin: 160px 0 0;
 }
 @media screen and (max-width: 768px) {
   .l-main-map {
-    margin: 100px 0 0;
+    margin: 80px 0 0;
   }
 }
 .l-main-map iframe {
   width: 100%;
   vertical-align: top;
-}
-
-.site-logo {
-  display: inline-block;
-  width: 40px;
-  margin: 0 0 0 60px;
-}
-@media screen and (min-width: 769px) {
-  .site-logo {
-    transition: all ease-in-out 0.3s;
-  }
-  .site-logo:hover {
-    opacity: 0.5;
-  }
-}
-.site-logo img {
-  width: 100%;
-  height: auto;
-}
-
-.site-nav {
-  list-style: none;
-}
-.site-nav .site-nav-item {
-  display: inline-block;
-  margin: 0 0 0 13px;
-  color: #fff;
-  font-size: 1.6rem;
-}
-@media screen and (min-width: 769px) {
-  .site-nav .site-nav-item {
-    transition: all ease-in-out 0.3s;
-  }
-  .site-nav .site-nav-item:hover {
-    opacity: 0.5;
-  }
 }/*# sourceMappingURL=common.css.map */
