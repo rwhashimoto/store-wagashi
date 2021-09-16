@@ -11,6 +11,8 @@
     writing-mode: vertical-rl;
     @include media-sp {
         background: url(/images/common/kv-sp.jpg);
+        background-size: cover;
+        background-position: 14%;
         padding: 20px;
     }
     .site-logo {

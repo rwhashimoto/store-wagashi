@@ -346,6 +346,8 @@ a {
 @media screen and (max-width: 768px) {
   .l-header {
     background: url(/images/common/kv-sp.jpg);
+    background-size: cover;
+    background-position: 14%;
     padding: 20px;
   }
 }
