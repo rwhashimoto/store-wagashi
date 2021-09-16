@@ -3,14 +3,14 @@
     width: 100%;
     min-height: 100vh;
     padding: 60px 80px;
-    background: url(/images/common/kv-pc.jpg);
+    background: url(../images/common/kv-pc.jpg);
     background-size:cover;
     background-position: center;
     font-family: $font-family;
     -ms-writing-mode: tb-rl;
     writing-mode: vertical-rl;
     @include media-sp {
-        background: url(/images/common/kv-sp.jpg);
+        background: url(../images/common/kv-sp.jpg);
         background-size: cover;
         background-position: 14%;
         padding: 20px;
