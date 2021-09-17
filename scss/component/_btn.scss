@@ -1,0 +1,25 @@
+.top-btn {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: $online-color;
+    color: $sub-color;
+    bottom: 50px;
+    right: 50px;
+    cursor: pointer;
+    span {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: block;
+        width: 42px;
+        height: 42px;
+        line-height: 42px;
+        text-align: center;
+        border-radius: 50%;
+        border: solid 1px $sub-color;
+        font-size: 1.2rem;
+    }
+}
